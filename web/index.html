@@ -2,24 +2,45 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="google-signin-client_id" content="606418018760-ip5e5b2r5jh5l76slghu3ac4n6ae9gih.apps.googleusercontent.com" />
+  <meta name="google-signin-client_id" content="741585694427-eerr58s99tnbp74rbckssa9lajmfaqr4.apps.googleusercontent.com" />
+  <!--<meta name="google-signin-client_id" content="606418018760-ip5e5b2r5jh5l76slghu3ac4n6ae9gih.apps.googleusercontent.com" />-->
   <title>Flutter Keep</title>
 </head>
 <body>
   <!-- Local testing only
+  -->
   <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+  <!--
   <script defer src="./init-firebase.js"></script>
   -->
 
-  <!-- Production -->
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyA7BRas0BpsGQPpCMZiNnSXHvjbE5Tn5_s",
+      authDomain: "edicon-dev.firebaseapp.com",
+      databaseURL: "https://edicon-dev.firebaseio.com",
+      projectId: "edicon-dev",
+      storageBucket: "edicon-dev.appspot.com",
+      messagingSenderId: "741585694427",
+      appId: "1:741585694427:web:5fe94dba269889099ba6fe",
+      measurementId: "G-HQGHXK2LQS"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <!-- Production
   <script defer src="/__/firebase/7.9.2/firebase-app.js"></script>
   <script defer src="/__/firebase/7.9.2/firebase-analytics.js"></script>
   <script defer src="/__/firebase/7.9.2/firebase-auth.js"></script>
   <script defer src="/__/firebase/7.9.2/firebase-firestore.js"></script>
   <script defer src="/__/firebase/init.js"></script>
+   -->
 
   <script defer src="./config-firestore.js"></script>
   <script defer src="main.dart.js" type="application/javascript"></script>
